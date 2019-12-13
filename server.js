@@ -1,7 +1,12 @@
-let express = require('express'),
-  app = express(),
-  port = process.env.PORT || 3000;
+/* eslint-disable no-console */ 
+require('dotenv').config();
+require('./lib/utils/connect')();
+const app =  require('./lib/app');
 
-app.listen(port);
+const PORT = process.env.PORT || 7890;
 
-console.log('garden wall API server started on: ' + port);
+
+app.listen(PORT, () => {
+  console.log('Server is listening on PORT' `${PORT}`);
+});
+

@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Walter+Turncoat&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./styles.css">
   <title>Over The Garden Wall API</title>
 </head>
 <header class="header">
-  <h1 class="title">Over The Garden Wall</h1>
   <div class="headerImage">
     <img src="../../assets/OTGWpic.jpg" alt="Picture of main characters Wirt and Greg in the woods" />
   </div>
@@ -25,7 +26,7 @@
       <td>get <b>all</b> characters</td>
     </tr>
     <tr>
-      <td class="route"><span>GET /api/v1/characters/$</span></td>
+      <td class="route"><span>GET /api/v1/characters/${Character+/=Name}</span></td>
       <td>get a specific character by name</td>
     </tr>
     <tr>
@@ -33,7 +34,7 @@
       <td>get <b>all</b> locations</td>
     </tr>
     <tr>
-      <td class="route"><span>GET /api/v1/locations/$</span></td>
+      <td class="route"><span>GET /api/v1/locations/${Location+Name}</span></td>
       <td>get a specific location by name</td>
     </tr>
     <tr>
@@ -41,11 +42,11 @@
       <td>get list of <b>all</b> special objects</td>
     </tr>
     <tr>
-      <td class="route"><span>GET /api/v1/specialObjects/$</span></td>
+      <td class="route"><span>GET /api/v1/specialObjects/${Object+Name}</span></td>
       <td>get a specific object by name</td>
     </tr>
     <tr>
-      <td class="route"><span>GET /api/v1/characters/random</span></td>
+      <td class="route"><span>GET /api/v1/characters/random?count=${Num}</span></td>
       <td id="random"><b>get one random character</b></td>
     </tr>
   </table>

@@ -4,11 +4,9 @@ require('./lib/utils/connect');
 // const bodyParser = require('body-parser');
 
 const app =  require('./lib/app');
+const PORT = 7890;
 
-const PORT = process.env.PORT || 7890;
-
-
-app.listen(PORT, () => {
+app.listen(7890, () => {
   console.log('Server is listening on PORT' `${PORT}`);
 });
 

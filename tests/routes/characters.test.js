@@ -17,8 +17,8 @@ describe('characters routes', () => {
 
   it('can get a list of all characters', () => {
     return request(app)
-      .get('/api/v1/characters')
-  })
+      .get('/api/v1/characters');
+  });
 });
 
 
